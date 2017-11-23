@@ -25,7 +25,7 @@ void vector_deque_timer()
 	clock_t start;
 	clock_t end;
 	double cpu_time_used;
-	// Вычисляем сложность алгоритма доступа к элементу вектора
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ Р°Р»РіРѕСЂРёС‚РјР° РґРѕСЃС‚СѓРїР° Рє СЌР»РµРјРµРЅС‚Сѓ РІРµРєС‚РѕСЂР°
 	cout << endl << "Vector" << endl << "Complexity of operation \"at()\":" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
@@ -63,7 +63,7 @@ void vector_deque_timer()
 	results.clear();
 	average_time.clear();
 	v.clear();
-	// Вычисляем сложность добавления элемента в конец вектора (копируемые объекты)
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РІ РєРѕРЅРµС† РІРµРєС‚РѕСЂР° (РєРѕРїРёСЂСѓРµРјС‹Рµ РѕР±СЉРµРєС‚С‹)
 	cout << endl << "Complexity of operation \"push_back()\":" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
@@ -94,9 +94,9 @@ void vector_deque_timer()
 	results.clear();
 	average_time.clear();
 	v.clear();
-	// Вычисляем сложность добавления элемента в начало вектора
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РІ РЅР°С‡Р°Р»Рѕ РІРµРєС‚РѕСЂР°
 	cout << endl << "Complexity of operation \"insert(v.begin(),value)\":" << endl;
-	number_of_measurements = { 1 }; // Очень длительный процесс при 500000 эл-ов
+	number_of_measurements = { 1 }; // РћС‡РµРЅСЊ РґР»РёС‚РµР»СЊРЅС‹Р№ РїСЂРѕС†РµСЃСЃ РїСЂРё 500000 СЌР»-РѕРІ
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
 		amount_of_elements = get_amount_of_elements(count);
@@ -126,7 +126,7 @@ void vector_deque_timer()
 	results.clear();
 	average_time.clear();
 	v.clear();
-	// Вычисляем сложность добавления элемента в конец вектора (перемещаемые объекты)
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РІ РєРѕРЅРµС† РІРµРєС‚РѕСЂР° (РїРµСЂРµРјРµС‰Р°РµРјС‹Рµ РѕР±СЉРµРєС‚С‹)
 	number_of_measurements = { 10 };
 	cout << endl << "Complexity of operation \"push_back(move())\":" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
@@ -160,7 +160,7 @@ void vector_deque_timer()
 	v.clear();
 
 	cout << endl << "Deque" << endl;
-	// Вычисляем сложность алгоритма доступа к элементу deque
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ Р°Р»РіРѕСЂРёС‚РјР° РґРѕСЃС‚СѓРїР° Рє СЌР»РµРјРµРЅС‚Сѓ deque
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
 		amount_of_elements = get_amount_of_elements(count);
@@ -191,7 +191,7 @@ void vector_deque_timer()
 	results.clear();
 	average_time.clear();
 	d.clear();
-	// Вычисляем сложность добавления элемента в конец deque (копируемые объекты)
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РІ РєРѕРЅРµС† deque (РєРѕРїРёСЂСѓРµРјС‹Рµ РѕР±СЉРµРєС‚С‹)
 	cout << endl << "Complexity of operation \"push_back()\":" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
@@ -222,7 +222,7 @@ void vector_deque_timer()
 	results.clear();
 	average_time.clear();
 	d.clear();
-	// Вычисляем сложность добавления элемента в начало deque
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РІ РЅР°С‡Р°Р»Рѕ deque
 	cout << endl << "Complexity of operation \"push_front()\":" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
@@ -253,7 +253,7 @@ void vector_deque_timer()
 	results.clear();
 	average_time.clear();
 	d.clear();
-	// Вычисляем сложность добавления элемента в конец deque (перемещаемые объекты)
+	// Р’С‹С‡РёСЃР»СЏРµРј СЃР»РѕР¶РЅРѕСЃС‚СЊ РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° РІ РєРѕРЅРµС† deque (РїРµСЂРµРјРµС‰Р°РµРјС‹Рµ РѕР±СЉРµРєС‚С‹)
 	cout << endl << "Complexity of operation \"push_back(move())\":" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
@@ -285,7 +285,7 @@ void vector_deque_timer()
 	average_time.clear();
 	d.clear();
 
-	// Вычисляем динамику изменения capacity при добавлении элементов в вектор
+	// Р’С‹С‡РёСЃР»СЏРµРј РґРёРЅР°РјРёРєСѓ РёР·РјРµРЅРµРЅРёСЏ capacity РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё СЌР»РµРјРµРЅС‚РѕРІ РІ РІРµРєС‚РѕСЂ
 	cout << endl << "Dynamics of \"capacity\" changes when adding elements to the vector:" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
@@ -314,7 +314,7 @@ void vector_deque_timer()
 	results.clear();
 	average_time.clear();
 	v.clear();
-	// Вычисляем динамику изменения capacity при удалении элементов из вектора
+	// Р’С‹С‡РёСЃР»СЏРµРј РґРёРЅР°РјРёРєСѓ РёР·РјРµРЅРµРЅРёСЏ capacity РїСЂРё СѓРґР°Р»РµРЅРёРё СЌР»РµРјРµРЅС‚РѕРІ РёР· РІРµРєС‚РѕСЂР°
 	cout << endl << "Dynamics of \"capacity\" changes when deleting elements from the vector:" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
@@ -360,7 +360,7 @@ void multimap_timer()
 	clock_t start;
 	clock_t end;
 	double cpu_time_used;
-	// Вычисляем изменение времени добавления элемента с одним и тем же ключом
+	// Р’С‹С‡РёСЃР»СЏРµРј РёР·РјРµРЅРµРЅРёРµ РІСЂРµРјРµРЅРё РґРѕР±Р°РІР»РµРЅРёСЏ СЌР»РµРјРµРЅС‚Р° СЃ РѕРґРЅРёРј Рё С‚РµРј Р¶Рµ РєР»СЋС‡РѕРј
 	cout << endl << "Change the time to add an element with the same key to multimap:" << endl;
 	for (unsigned int count = { 0 }; count < count_of_tests; ++count)
 	{
