@@ -34,7 +34,7 @@ public:
 	MovableObjects(const MovableObjects<T>& other) = delete;
 	MovableObjects<T> operator=(const MovableObjects<T>& other) = delete;
 };
-// Реализация функции хеширования для пользовательского типа
+// Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё С…РµС€РёСЂРѕРІР°РЅРёСЏ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРіРѕ С‚РёРїР°
 template <class T>
 struct CustomType
 {
@@ -46,7 +46,7 @@ struct CustomType
 		second = second_;
 	}
 };
-// Специализация уже существующих сущностей (это является разрешенным в стандарте C++)
+// РЎРїРµС†РёР°Р»РёР·Р°С†РёСЏ СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РёС… СЃСѓС‰РЅРѕСЃС‚РµР№ (СЌС‚Рѕ СЏРІР»СЏРµС‚СЃСЏ СЂР°Р·СЂРµС€РµРЅРЅС‹Рј РІ СЃС‚Р°РЅРґР°СЂС‚Рµ C++)
 namespace std
 {
 	template <class T>
